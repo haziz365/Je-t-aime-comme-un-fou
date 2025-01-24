@@ -1,0 +1,68 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poème Romantique</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+        .poem-text {
+            font-family: 'Dancing Script', cursive;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-b from-pink-200 via-purple-200 to-blue-200 min-h-screen flex flex-col justify-between">
+    <header class="text-center py-8">
+        <h1 class="text-4xl font-bold text-gray-800">Poème Romantique</h1>
+    </header>
+    <main class="flex-grow">
+        <section class="text-center px-4">
+            <p class="text-2xl poem-text text-gray-700 mb-4">Tellement de choses me manquent...</p>
+            <button id="readMoreBtn" class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition">Lire le poème complet</button>
+        </section>
+        <section id="poemSection" class="hidden text-center px-4 mt-8">
+            <p class="text-xl poem-text text-gray-700 mb-4">Tellement de choses me manquent</p>
+            <p class="text-xl poem-text text-gray-700 mb-4">Tous ses appels jusqu'à tard le soir,</p>
+            <p class="text-xl poem-text text-gray-700 mb-4">Toutes ces fois passées, juste toi et moi,</p>
+            <p class="text-xl poem-text text-gray-700 mb-4">Toutes ces fois où tu mettais ton parfum sur l'élastique,</p>
+            <p class="text-xl poem-text text-gray-700 mb-4">Parfois, avant de dormir, je me souviens de tous ces beaux moments passés ensemble et j'en ai les larmes aux yeux.</p>
+            <p class="text-xl poem-text text-gray-700 mb-4">Pas des larmes de tristesse, mais des larmes d'amour et de nostalgie.</p>
+            <p class="text-xl poem-text text-gray-700 mb-4">Tous mes poèmes, je les écris en pleurant,</p>
+            <p class="text-xl poem-text text-gray-700 mb-4">Mais pour cette fois, je l'écris avec le sourire en pensant que t'avoir dans ma vie était le plus beau cadeau qu'Allah pouvait me faire.</p>
+            <p class="text-xl poem-text text-gray-700 mb-4">Drôle de coïncidence, si le soir où je me suis demandé si j'allais enfin tout t'avouer,</p>
+            <p class="text-xl poem-text text-gray-700 mb-4">Je le fasse sans même me rendre compte.</p>
+            <p class="text-xl poem-text text-gray-700 mb-4">Je ne t'oublierai jamais,</p>
+            <p class="text-xl poem-text text-gray-700 mb-4">Tu seras toujours quelque part, que ce soit dans ma mémoire ou même mon cœur.</p>
+            <p class="text-xl poem-text text-gray-700 mb-4">Tu es la première personne que j'aime,</p>
+            <p class="text-xl poem-text text-gray-700 mb-4">Et j'espère la seule.</p>
+            <p class="text-xl poem-text text-gray-700 mb-4">Sans le vouloir, j'ai été frappé par l'amour,</p>
+            <p class="text-xl poem-text text-gray-700 mb-4">Je ne compte plus le nombre de fois où je voulais tout te dire, te dire que je t'aimais,</p>
+            <p class="text-xl poem-text text-gray-700 mb-4">Et maintenant je me demande ce que penserait le moi du passé,</p>
+            <p class="text-xl poem-text text-gray-700 mb-4">Celui qui disait que, depuis la mort de ma chienne, je ne m'attacherais plus à personne par peur de perdre encore quelqu'un.</p>
+            <p class="text-xl poem-text text-gray-700 mb-4">Finalement, je me suis attaché à toi avec cette peur de te perdre,</p>
+            <p class="text-xl poem-text text-gray-700 mb-4">Mais je me dis que même si je te perds, j'aurai passé les meilleurs moments de ma vie avec toi.</p>
+            <p class="text-xl poem-text text-gray-700 mb-4">Un jour, tu m'as dit "Cupidon n'a pas raté sa flèche",</p>
+            <p class="text-xl poem-text text-gray-700 mb-4">Sans même savoir que je t'aimais,</p>
+            <p class="text-xl poem-text text-gray-700 mb-4">Mais t'avais quand même raison,</p>
+            <p class="text-xl poem-text text-gray-700 mb-4">Cupidon n'a pas raté sa flèche,</p>
+            <p class="text-xl poem-text text-gray-700 mb-4">Il a visé mon cœur avec une flèche à ton nom.</p>
+            <p class="text-xl poem-text text-gray-700 mb-4">Tu es ma raison de vivre,</p>
+            <p class="text-xl poem-text text-gray-700 mb-4">Ma raison de croire en l'amour,</p>
+            <p class="text-xl poem-text text-gray-700 mb-4">Ma raison d'aimer.</p>
+            <p class="text-xl poem-text text-gray-700 mb-4">Tu es la personne qui compte le plus à mes yeux.</p>
+        </section>
+    </main>
+    <footer class="text-center py-8 bg-white bg-opacity-50">
+        <p class="text-lg poem-text text-gray-800">"Tu es ma raison de vivre, ma raison de croire en l'amour."</p>
+    </footer>
+    <script>
+        document.getElementById('readMoreBtn').addEventListener('click', function() {
+            document.getElementById('poemSection').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
